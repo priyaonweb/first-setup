@@ -1,13 +1,582 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample File</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QPharma</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        /* outline: 1px solid red; */
+    }
+
+    .inputsubmit {
+        background-color: #32DAA0;
+        width: 20%;
+        height: 40px;
+        color: white;
+        font-size: 12px;
+        border-radius: 4px;
+        border: 1px solid #333;
+    }
+
+    .inputbox {
+        display: block;
+        width: 73%;
+        height: 55px;
+        background: #f7f8fa;
+        border-radius: 4px;
+        border: 1px solid #f7f8fa;
+        float: left;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 4em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        list-style: square;
+    }
+
+    h1 span,
+    h2 span {
+        font-weight: 300;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .view-link {
+        font-size: 12px;
+        background: #FDC821;
+        color: black;
+        text-decoration: none;
+        padding: 13px 20px 13px 20px;
+        border-radius: 30px;
+        -webkit-transition: all .1s ease-in;
+        -moz-transition: all .1s ease-in;
+        -o-transition: all .1s ease-in;
+        transition: all .1s ease-in;
+    }
+</style>
+
 <body>
-    <h1>Heading One</h1>
+    <section>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container align-items-center">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ml-auto mt-0">
+                        <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                COVID-19
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Know about COVID-19</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Book COVID-19 RT-PCR test </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Book Antibody tests </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">FAQs </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Blogs/videos </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Clinical Research</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Patients
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Book A test </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Find A lab </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Query/Enquiry form </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">FAQs </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Blogs </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Health tips </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Events </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">PR/Media </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Health videos </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Doctors
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">test offered</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Doctor's Events </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">BROCHURES </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Doctor's Blog </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Downloaded forms </a></li>
+                            </ul>
+                        </li>
+                        <a class="nav-link active" aria-current="page" href="#">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">E Dos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PARTNER WITH US
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Franchising Opportunities</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Corporate Wellness</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Hospital Lab Management</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Organise Camps</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="max-height:550px;">
+                    <img src="./img/defense-1403067_1920.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>*These tests are not for diagnosis of acute COVID-19 infection are ment for
+                            sero-surveillance only.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <img src="./img/machine.PNG" alt="Girl in a jacket" class="img-fluid">
+                </div>
+                <div class="col-sm-6">
+                    <h3 style="color: #FDC821;">our USPs</h3>
+                    <p>
+                        Pathkind Labs is a fast growing network of diagnostic laboratories in India. The mission is to
+                        provide affordable
+                        diagnostic solutions for a wide range of tests available for everyone. Our labs and collection
+                        centers use
+                        state-of-the-art equipments that help provide accurate test results within clinically relevant
+                        time. Our labs offer 100s
+                        of tests ranging from the simplest screening to advanced tests under molecular pathology,
+                        cytogenetics, histopathology &
+                        hematology. We also provide on-demand Sample Home collection facility.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h5 style="color: #FDC821;">
+                        BIOCHEMISTRY AND IMMUNOASSAY
+                    </h5>
+                    <p>
+                        Biochemistry and Immunoassay sections are equipped with fully automated, state of
+                        the art integrated analysers, where
+                        multiple tests can be performed from a single specimen without aliquoting.
+                    </p>
+                    <a class="btn btn-primary" href="https://www.w3schools.com">see more </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h5 style="color: #FDC821;">
+                        HAEMATOLOGY, COAGULATION AND FLOW CYTOMETRY
+                    </h5>
+                    <p>
+                        Haematology, coagulation and Flow cytometry sections are equipped with fully
+                        automated, high end analysers to carry out
+                        all tests.
+                    </p>
+                    <a class="btn btn-primary" href="https://www.w3schools.com">see more </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h5 style="color: #FDC821;">
+                        CLINICAL PATHOLOGY
+                    </h5>
+                    <p>
+                        Clinical pathology section is also equipped with fully automated analysers
+                        for testing of urine. Besides automated
+                        analysis, manual tests in this section is performed by highly trained and
+                        qualified personnel to ensure best quality
+                        reporting of urine, stool, semen and all body fluid samples.
+                    </p>
+                    <a class="btn btn-primary" href="https://www.w3schools.com">see more </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h5 style="color: #FDC821;">
+                        MICROBIOLOGY
+                    </h5>
+                    <p>
+                        Microbiology section at Pathkind Labs comprises of fully automated analysers
+                        for routine Microbiology, including both
+                        aerobic and anaerobic bacterial cultures and fungal culture as well as a
+                        high end TB(Mycobacteria) Lab
+                    </p>
+                    <a class="btn btn-primary" href="https://www.w3schools.com">see more </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4 bg-info">
+        <div class="container-fluid">
+            <center>
+                <br>
+                <h2 style="color: #FDC821;">
+                    Health <b> Packages</b>
+                </h2>
+                <p class="text-white">
+                    Pathkind offers a wide array of preventive health packages to suit your age and lifestyle
+                </p>
+        </div>
+        </center>
+    </section>
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm">
+                    <h3 class="h1" style="color:#FDC821 ;">
+                        Customized Health Packages
+                    </h3>
+                    <p style="font-size: 20px; margin-bottom: 50px;  margin-top: 50px;">
+                        tailor-made for you
+                    </p>
+                    <a class="view-link" href="/health-packages"> <img src="img/eye-24-512.png" width="20px"
+                            height="20px">View health Packages</a>
+                </div>
+                <div class="col-sm">
+                    <img src="img/health.PNG" class="img-fluid" style="float: right;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <img src="./img/doctor.PNG" class="img-fluid">
+                </div>
+                <div class="col-sm-6">
+                    <h1 class="h3 text-warning">Get to know</h1>
+                    <p class="h5 font-weight-light">
+                        our best values
+                    </p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a class="only-link" href="http://careers.pathkindlabs.com/" target="_blank">International
+                                Quality Standards</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="only-link" href="https://www.pathkindlabs.com/test-catalogue"
+                                target="_blank">Quality Tests at
+                                Affordable Prices</a>
+                        </li>
+                        <li class="list-group-item">
+                            Accessible Network of <a class="only-link" href="https://www.pathkindlabs.com/find-a-lab"
+                                target="_blank">Labs
+                                across all cities &amp; towns</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col">
+                    <h1>
+                        <span>Find tests by &nbsp;</span>
+                        <br>
+                    </h1>
+                    <p style="font-size: 18px; color: #FDC821; margin-left: 12px;">
+                        Health Conditions
+                    </p>
+
+                    <a style="margin-left: 12px;" class="view-link" href="/health-packages"> <img
+                            src="img/eye-24-512.png" width="20px" height="20px">
+                        Find A Test
+                    </a>
+                </div>
+                <div class="col">
+                    <img src="img/doc-img3.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active align-items-center" style="max-height:550px;">
+                    <img src="./img/fyrcJQ.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="h5 font-weight-light" style="line-height: 1.7;">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                            of classical Latin literature
+                            from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                            Hampden-Sydney College in Virginia,
+                            looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                            going through the cites of
+                            the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from
+                            sections 1.10.32 and 1.10.33
+                            of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+                            BC. This book is a treatise
+                            on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
+                            "Lorem ipsum dolor sit
+                            amet..", comes from a line in section 1.10.32.
+
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                            interested. Sections 1.10.32 and
+                            1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
+                            original form, accompanied by
+                            English versions from the 1914 translation by H. Rackham.
+                            *These tests are not for diagnosis of acute COVID-19 infection are ment for
+                            sero-surveillance only.</p class="h5 font-weight-light">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12 pb-3">
+                    <div class="card w-100 h-100 shadow border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span>
+                                    <i class="fa fa-phone" style="font-size:48px;color:#32DAA0"></i>
+                                </span>
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">customer care</h6>
+                            <p class="card-text"> +91-96-1372-1372</p>
+                            <p class="card-text"> 0120-4541372</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 pb-3">
+                    <div class="card w-100 h-100 shadow border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span>
+                                    <i aria-hidden="true" class="fa fa-map-marker fa-lg" style="color: #32DAA0;">&nbsp;
+                                    </i>
+                                </span>
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                <span style="color: #32DAA0;">
+                                    <b> Corporate Address</b>
+                                </span>
+                            </h6>
+                            <p class="card-text">L-114, Ajnara Daffodils </p>
+                            <p class="card-text">Sector 137, Noida 201305 UP India </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 pb-3">
+                    <div class="card w-100 h-100 shadow border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span>
+                                    <i aria-hidden="true" class="fa fa-envelope "
+                                        style="color: #32DAA0; font-size:48px ;">&nbsp;
+                                    </i>
+                                </span>
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                <span style="color: #32DAA0;">
+                                    <b> Feedback & Enquiry</b>
+                                </span>
+                            </h6>
+                            <p class="card-text">care@qpharma.in </p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4 my-5 bg-info d-none d-md-inline-block w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img alt="" src="img/580b57fbd9996e24bc43bf86.png" class="position-absolute img-fluid pb-4"
+                        style="top: -100px; height: 280px;">
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-mobile fa-5x text-white" aria-hidden="true"></i>
+                        <span class="text-white h2 ml-4"> +91-96-1372-1372</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-
+    <section class="bg-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-4 col-md-4">
+                    <span>
+                        About Us
+                    </span>
+                    <ul>
+                        <li>
+                            Mission & Vision
+                        </li>
+                        <li>
+                            Management
+                        </li>
+                        <li>
+                            contact us
+                        </li>
+                        <li>
+                            Research and Development
+                        </li>
+                    </ul>
+                </div>
+                <div class=" col-lg-3 col-sm-4 col-md-4">
+                    <span>
+                        Partner With Us
+                    </span>
+                    <ul>
+                        <li>
+                            Partner With Us
+                        </li>
+                        <li>
+                            Hospital Lab Management
+                        </li>
+                        <li>
+                            Organise Camps
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-sm-4 col-md-4">
+                    <span>
+                        Packages
+                    </span>
+                    <ul>
+                        <li>
+                            List of all Packages
+                        </li>
+                        <span>
+                            Careers
+                        </span>
+                        <li>
+                            Current Openings
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-md-3">
+                    <span>
+                        Employee Portals
+                    </span>
+                    <div class="py-1 mb-4">
+                        <a href="javascript:void(0);" class="d-inline-block mb-2">Employee Portal 1</a>
+                        <a href="javascript:void(0);" class="d-inline-block mb-2">Employee Portal 1</a>
+                        <a href="javascript:void(0);" class="d-inline-block mb-2">Download forms</a>
+                    </div>
+                </div>
+            </div>
+    </section>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+
 </html>
