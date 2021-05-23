@@ -8,11 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-    crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 </head>
 <style>
@@ -46,13 +42,13 @@
 
     ul {
         display: block;
-        list-style-type: disc;
+        list-style-type: ;
         margin-block-start: 1em;
         margin-block-end: 4em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         padding-inline-start: 40px;
-        list-style: square;
+        list-style: ;
     }
 
     h1 span,
@@ -79,6 +75,147 @@
         transition: all .1s ease-in;
     }
 
+    a:hover {
+        background-color: #32DAA0;
+
+    }
+
+    .divider-small-border2 {
+        margin: 15px 0;
+        width: 500px;
+        height: 3px;
+        margin: 15px auto;
+        background-color: #17a2b8
+    }
+
+    .faq-section {
+        background: #fdfdfd;
+        min-height: 100vh;
+        padding: 10vh 0 0;
+    }
+
+    .faq-title h2 {
+        position: relative;
+        margin-bottom: 45px;
+        display: inline-block;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .faq-title h2::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 60px;
+        height: 2px;
+        background: #FDC821;
+        bottom: -25px;
+        margin-left: -30px;
+    }
+
+    .faq-title p {
+        padding: 0 190px;
+        margin-bottom: 10px;
+    }
+
+    .faq {
+        background: #FFFFFF;
+        box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+    }
+
+    .faq .card {
+        border: none;
+        background: none;
+        border-bottom: 1px dashed #CEE1F8;
+    }
+
+    .faq .card .card-header {
+        padding: 0px;
+        border: none;
+        background: none;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    .faq .card .card-header:hover {
+        background: #32DAA0;
+        padding-left: 10px
+    }
+
+    .faq .card .card-header .faq-title {
+        width: 100%;
+        text-align: left;
+        padding: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: #3B566E;
+        text-decoration: none !important;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .faq .card .card-header .faq-title .badge {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 14px;
+        float: left;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        text-align: center;
+        background: #FDC821;
+        color: #fff;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .faq .card .card-body {
+        padding: 30px;
+        padding-left: 35px;
+        padding-bottom: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #6F8BA4;
+        line-height: 28px;
+        letter-spacing: 1px;
+        border-top: 1px solid #F3F8FF;
+    }
+
+    .faq .card .card-body p {
+        margin-bottom: 14px;
+    }
+
+    @media (max-width: 991px) {
+        .faq {
+            margin-bottom: 30px;
+        }
+
+        .faq .card .card-header .faq-title {
+            line-height: 26px;
+            margin-top: 10px;
+        }
+    }
+      .ull {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
 
 </style>
 
@@ -229,275 +366,96 @@
         </nav>
     </section>
     <section>
-
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="max-height:550px;">
-                    <img src="./img/defense-1403067_1920.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>*These tests are not for diagnosis of acute COVID-19 infection are ment for
-                            sero-surveillance only.</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 text-center">
-                    <img src="./img/machine.PNG" alt="Girl in a jacket" class="img-fluid">
-                </div>
-                <div class="col-sm-6">
-                    <h3 style="color: #FDC821;">our USPs</h3>
-                    <p>
-                        Pathkind Labs is a fast growing network of diagnostic laboratories in India. The mission is to
-                        provide affordable
-                        diagnostic solutions for a wide range of tests available for everyone. Our labs and collection
-                        centers use
-                        state-of-the-art equipments that help provide accurate test results within clinically relevant
-                        time. Our labs offer 100s
-                        of tests ranging from the simplest screening to advanced tests under molecular pathology,
-                        cytogenetics, histopathology &
-                        hematology. We also provide on-demand Sample Home collection facility.
-                    </p>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <h5 style="color: #FDC821;">
-                        BIOCHEMISTRY AND IMMUNOASSAY
-                    </h5>
-                    <p>
-                        Biochemistry and Immunoassay sections are equipped with fully automated, state of
-                        the art integrated analysers, where
-                        multiple tests can be performed from a single specimen without aliquoting.
-                    </p>
-                    <a class="btn btn-primary" href="https://www.w3schools.com">see more </a>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <h5 style="color: #FDC821;">
-                        HAEMATOLOGY, COAGULATION AND FLOW CYTOMETRY
-                    </h5>
-                    <p>
-                        Haematology, coagulation and Flow cytometry sections are equipped with fully
-                        automated, high end analysers to carry out
-                        all tests.
-                    </p>
-                    <a class="btn btn-primary" href="https://www.w3schools.com">see more </a>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <h5 style="color: #FDC821;">
-                        CLINICAL PATHOLOGY
-                    </h5>
-                    <p>
-                        Clinical pathology section is also equipped with fully automated analysers
-                        for testing of urine. Besides automated
-                        analysis, manual tests in this section is performed by highly trained and
-                        qualified personnel to ensure best quality
-                        reporting of urine, stool, semen and all body fluid samples.
-                    </p>
-                    <a class="btn btn-primary" href="https://www.w3schools.com">see more </a>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <h5 style="color: #FDC821;">
-                        MICROBIOLOGY
-                    </h5>
-                    <p>
-                        Microbiology section at Pathkind Labs comprises of fully automated analysers
-                        for routine Microbiology, including both
-                        aerobic and anaerobic bacterial cultures and fungal culture as well as a
-                        high end TB(Mycobacteria) Lab
-                    </p>
-                    <a class="btn btn-primary" href="https://www.w3schools.com">see more </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-4 bg-info">
         <div class="container-fluid">
-            <center>
-                <br>
-                <h2 style="color: #FDC821;">
-                    Health <b> Packages</b>
-                </h2>
-                <p class="text-white">
-                    Pathkind offers a wide array of preventive health packages to suit your age and lifestyle
-                </p>
-        </div>
-        </center>
-    </section>
-    <section class="py-4 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm">
-                    <h3 class="h1" style="color:#FDC821 ;">
-                        Customized Health Packages
-                    </h3>
-                    <p style="font-size: 20px; margin-bottom: 50px;  margin-top: 50px;">
-                        tailor-made for you
-                    </p>
-                    <a class="view-link" href="/health-packages"> <img src="img/eye-24-512.png" width="20px"
-                            height="20px">View health Packages</a>
-                </div>
-                <div class="col-sm">
-                    <img src="img/health.PNG" class="img-fluid" style="float: right;">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <img src="./img/doctor.PNG" class="img-fluid">
-                </div>
-                <div class="col-sm-6">
-                    <h1 class="h3 text-warning">Get to know</h1>
-                    <p class="h5 font-weight-light">
-                        our best values
-                    </p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <a class="only-link" href="http://careers.pathkindlabs.com/" target="_blank">International
-                                Quality Standards</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a class="only-link" href="https://www.pathkindlabs.com/test-catalogue"
-                                target="_blank">Quality Tests at
-                                Affordable Prices</a>
-                        </li>
-                        <li class="list-group-item">
-                            Accessible Network of <a class="only-link" href="https://www.pathkindlabs.com/find-a-lab"
-                                target="_blank">Labs
-                                across all cities &amp; towns</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-light">
-        <div class="container">
-            <div class="row align-items-center">
+            <div class="in-banner  downlnd-bnr">
 
-                <div class="col">
-                    <h1>
-                        <span>Find tests by &nbsp;</span>
-                        <br>
-                    </h1>
-                    <p style="font-size: 18px; color: #FDC821; margin-left: 12px;">
-                        Health Conditions
-                    </p>
+                <img class="img-fluid"
+                    src="https://www.pathkindlabs.com/media_upload/banner/covid19/faq_desktop_banner.jpg"
+                    alt="Covid-19 FAQs" title="Covid-19 FAQs">
 
-                    <a style="margin-left: 12px;" class="view-link" href="/health-packages"> <img
-                            src="img/eye-24-512.png" width="20px" height="20px">
-                        Find A Test
-                    </a>
-                </div>
-                <div class="col">
-                    <img src="img/doc-img3.jpg" class="img-fluid">
-                </div>
             </div>
+
         </div>
+
     </section>
+    <!------
     <section>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active align-items-center" style="max-height:550px;">
-                    <img src="./img/fyrcJQ.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p class="h5 font-weight-light" style="line-height: 1.7;">
-                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
-                            of classical Latin literature
-                            from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                            Hampden-Sydney College in Virginia,
-                            looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-                            going through the cites of
-                            the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from
-                            sections 1.10.32 and 1.10.33
-                            of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
-                            BC. This book is a treatise
-                            on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
-                            "Lorem ipsum dolor sit
-                            amet..", comes from a line in section 1.10.32.
+        <div class="container ">
+            <h1 class="global-heading text-center mt-4"><span>TEST</span> Catalogue-Book A Test</h1>
+            <div class=" divider-small-border2">
 
-                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
-                            interested. Sections 1.10.32 and
-                            1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
-                            original form, accompanied by
-                            English versions from the 1914 translation by H. Rackham.
-                            *These tests are not for diagnosis of acute COVID-19 infection are ment for
-                            sero-surveillance only.</p class="h5 font-weight-light">
+            </div>
+            <!----
+            <div class="row mt-4 text-center">
+                <div class="col-sm-3 ">
+                    <button type="button" class="btn btn-outline-primary mb-4">Preventive Health</button>
+
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Select City</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
                     </div>
                 </div>
-            </div>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-outline-primary mb-4">Packages by Health Condition</button>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>▾
+                                Select Nearest Area</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-outline-primary mb-4"> ALL  Packages</button>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                        </div>
+
+                    </div>
+                </div>
+
         </div>
     </section>
-    <section class="pt-4">
+-->
+    <section>
+        <div class="container mt-4">
+        <button type="button" class="btn btn-primary">Preventive Health Packages</button>
+        <button type="button" class="btn btn-primary"> Packages by Health Condition  </button>
+        <button type="button" class="btn btn-primary"> All Packages </button>
+<!---
+
+        </div>
+    </section>
+
+    <section>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-12 pb-3">
-                    <div class="card w-100 h-100 shadow border-0">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <span>
-                                    <i class="fa fa-phone" style="font-size:48px;color:#32DAA0"></i>
-                                </span>
-                            </h5>
-                            <h6 class="card-subtitle mb-2 text-muted">customer care</h6>
-                            <p class="card-text"> +91-96-1372-1372</p>
-                            <p class="card-text"> 0120-4541372</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12 pb-3">
-                    <div class="card w-100 h-100 shadow border-0">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <span>
-                                    <i aria-hidden="true" class="fa fa-map-marker fa-lg" style="color: #32DAA0;">&nbsp;
-                                    </i>
-                                </span>
-                            </h5>
-                            <h6 class="card-subtitle mb-2 text-muted">
-                                <span style="color: #32DAA0;">
-                                    <b> Corporate Address</b>
-                                </span>
-                            </h6>
-                            <p class="card-text">L-114, Ajnara Daffodils </p>
-                            <p class="card-text">Sector 137, Noida 201305 UP India </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12 pb-3">
-                    <div class="card w-100 h-100 shadow border-0">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <span>
-                                    <i aria-hidden="true" class="fa fa-envelope "
-                                        style="color: #32DAA0; font-size:48px ;">&nbsp;
-                                    </i>
-                                </span>
-                            </h5>
-                            <h6 class="card-subtitle mb-2 text-muted">
-                                <span style="color: #32DAA0;">
-                                    <b> Feedback & Enquiry</b>
-                                </span>
-                            </h6>
-                            <p class="card-text">care@qpharma.in </p>
-                            <p class="card-text"></p>
-                        </div>
-                    </div>
-                </div>
+            <div class="bg-light pb-4">
+                <p class=" text-center  " style="padding-top: 80px;">
+                    Please select City and Area to view the Test.
+                </p>
             </div>
+
         </div>
     </section>
+
+
     <section class="py-4 my-5 bg-info d-none d-md-inline-block w-100">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4 col-sm-12 ">
                     <img alt="" src="img/580b57fbd9996e24bc43bf86.png" class="position-absolute img-fluid pb-4"
-                    style="top: -100px; height: 280px;" >
+                        style="top: -100px; height: 280px;">
                 </div>
                 <div class="col-md-8 col-sm-12">
                     <div class="d-flex align-items-center">
@@ -574,7 +532,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </section>-
+
 
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

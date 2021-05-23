@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QPharma</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        /* outline: 1px solid red; */
+    }
+
+    .inputsubmit {
+        background-color: #32DAA0;
+        width: 20%;
+        height: 40px;
+        color: white;
+        font-size: 12px;
+        border-radius: 4px;
+        border: 1px solid #333;
+    }
+
+    .inputbox {
+        display: block;
+        width: 73%;
+        height: 55px;
+        background: #f7f8fa;
+        border-radius: 4px;
+        border: 1px solid #f7f8fa;
+        float: left;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 4em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        list-style: square;
+    }
+
+    h1 span,
+    h2 span {
+        font-weight: 300;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .view-link {
+        font-size: 12px;
+        background: #FDC821;
+        color: black;
+        text-decoration: none;
+        padding: 13px 20px 13px 20px;
+        border-radius: 30px;
+        -webkit-transition: all .1s ease-in;
+        -moz-transition: all .1s ease-in;
+        -o-transition: all .1s ease-in;
+        transition: all .1s ease-in;
+    }
+
+    a:hover {
+        background-color: #32DAA0;
+
+    }
+    li{
+        list-style-type: none;
+    }
+</style>
+
+<body>
+    <section>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container align-items-center">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ml-auto mt-0">
+                        <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                COVID-19
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Know about COVID-19</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Book COVID-19 RT-PCR test </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Book Antibody tests </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">FAQs </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Blogs/videos </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Clinical Research</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Patients
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Book A test </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Find A lab </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Query/Enquiry form </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">FAQs </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Blogs </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Health tips </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Events </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">PR/Media </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Health videos </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Doctors
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">test offered</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Doctor's Events </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">BROCHURES </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Doctor's Blog </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Downloaded forms </a></li>
+                            </ul>
+                        </li>
+                        <a class="nav-link active" aria-current="page" href="#">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">E Dos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PARTNER WITH US
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Franchising Opportunities</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Corporate Wellness</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Hospital Lab Management</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Organise Camps</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="max-height:550px;">
+                    <img src="./img/Capture44.PNG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4 text-center mt-4  " style="color: #32DAA0; font-size: 20px; ">
+<div class="container">
+        <span class="h3 " style=" margin: bottom 10px;">
+            KNOW ABOUT
+
+        </span>
+        <span class="h1">
+            COVID-19
+        </span>
+        <p style="color: black; font-size: 16px;">
+            Coronaviruses are a group of viruses that cause diseases in mammals and birds. In humans, coronaviruses mainly cause
+            respiratory tract infections. It could be mild illness (like the common cold) or lethal illness, depending on the virus.
+            The previously discovered coronaviruses are rhinoviruses, SARS, MERS, and the recent one is COVID-19. COVID-19 is an
+            infectious disease that first originated from Wuhan, China in December 2019. Within a few weeks, it spread globally at
+            an exponential rate and WHO declared it as a global pandemic on March 2020. It can spread from person to person via
+            coughing, sneezing, or exposure to droplets of saliva from an infected person. It is mandatory to follow respiratory
+            etiquette (covering your mouth while coughing, prefer to do quarantine if you feel sick). Having fever, cough, and
+            breathlessness are the common symptoms for COVID-19. People infected by COVID-19 majorly experience mild to moderate
+            respiratory illness. Senior citizens with low immunity and those with underlying medical problems like cardiovascular
+            disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness. The significant
+            deaths happened due to multiple organ failure and difficulty in breathing. Till now, there is no specific vaccine or
+            treatment for COVID-19.
+
+            Nevertheless, many microbiologists and medical experts are working for the cure. The best way to avert coronavirus is to
+            avoid exposure to the virus. Also, follow the guidelines given by relevant authorities or experts and avoid rumours
+            during these crucial times.
+        </p>
+</div>
+    </section>
+<section>
+
+    <div class="container">
+    <p class="h3">
+        Symptoms :-
+    </p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+            <div class="brochures-inner">
+                <div class="brochures-img">
+                    <img class="mob-ban" src="https://www.pathkindlabs.com/media_upload/covid19/icon2/Breathless.png">
+                </div>
+                <div class="brochures-title">Breathlessness</div>
+            </div>
+            </div>
+            <div class="col-sm-4">
+            <div class="brochures-inner">
+                <div class="brochures-img">
+                    <img class="mob-ban" src="https://www.pathkindlabs.com/media_upload/covid19/icon2/cough.png">
+                </div>
+                <div class="brochures-title">Coughing</div>
+            </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="brochures-inner">
+                    <div class="brochures-img">
+                        <img class="mob-ban" src="https://www.pathkindlabs.com/media_upload/covid19/icon2/fever.png">
+                    </div>
+                    <div class="brochures-title">Fever</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <li>
+                <div class="brochures-inner">
+                    <div class="brochures-img">
+<img class="mob-ban" src="https://www.pathkindlabs.com/media_upload/covid19/icon2/c_pain.png">                    </div>
+                    <div class="brochures-title">Chest pain</div>
+                </div>
+            </div>
+        </li>
+            <div class="col-sm-4">
+
+            <li>
+                <div class="brochures-inner">
+                    <div class="brochures-img" style="width: 200px; height: 200px;">
+                        <img class="mob-ban" src="https://www.pathkindlabs.com/media_upload/covid19/icon2/phlegm.png">
+                    </div>
+                    <div class="brochures-title">Phlegm</div>
+                </div>
+            </li>
+            </div>
+            <div class="col-sm-4">
+            <li>
+                <div class="brochures-inner">
+                    <div class="brochures-img">
+                        <img class="mob-ban" src="https://www.pathkindlabs.com/media_upload/covid19/icon2/pneumonia.png" >
+                    </div>
+                    <div class="brochures-title">Pneumonia</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+<section>
+    <br>
+
+    <div class="container">
+        <p class="h3">
+            Preventive measures:-
+        </p>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="brochures-inner">
+                    <div class="brochures-img">
+<img class="mob-ban" src="https://www.pathkindlabs.com/media_upload/covid19/icon2/hand_wash.png">                    </div>
+                    <div class="brochures-title">Wash your hands with soap only, for at least 20 sec</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="brochures-inner">
+                    <div class="brochures-img">
+<img class="mob-ban" src="https://www.pathkindlabs.com/media_upload/covid19/icon2/CYM.png">                    </div>
+                    <div class="brochures-title">Cover your mouth with a surgical mask or N95 mask</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="brochures-inner">
+                    <div class="brochures-img">
+<img class="mob-ban" src="https://www.pathkindlabs.com/media_upload/covid19/icon2/doctor.png">                    </div>
+                    <div class="brochures-title">Consult a doctor if you have a cough, fever or difficulty breathing</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="brochures-inner">
+                    <div class="brochures-img">
+<img class="mob-ban" src="https://www.pathkindlabs.com/media_upload/covid19/icon2/social_distancing1.png">                    </div>
+                    <div class="brochures-title">Maintain a social distancing</div>
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="brochures-inner">
+                    <div class="brochures-img">
+<img class="mob-ban" src="https://www.pathkindlabs.com/media_upload/covid19/icon2/home.png">                    </div>
+                    <div class="brochures-title">Stay safe at home</div>
+                </div>
+            </div>
+
+    </div>
+
+    </div>
+</section>
+<section class="py-4 my-5 bg-info d-none d-md-inline-block w-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <img alt="" src="https://www.pathkindlabs.com/front/img/mobile.png" class="position-absolute"
+                    style="top: -53px">
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <div class="d-flex align-items-center">
+                    <i class="fa fa-mobile fa-5x text-white" aria-hidden="true"></i>
+                    <span class="text-white h2 ml-4"> +91-96-1372-1372</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-
+<section class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-4 col-md-4">
+                <span>
+                    About Us :
+                </span>
+                <ul>
+                    <li>
+                        Mission & Vision
+                    </li>
+                    <li>
+                        Management
+                    </li>
+                    <li>
+                        contact us
+                    </li>
+                    <li>
+                        Research and Development
+                    </li>
+                </ul>
+            </div>
+            <div class=" col-lg-3 col-sm-4 col-md-4">
+                <span>
+                    Partner With Us :
+                </span>
+                <ul>
+                    <li>
+                        Partner With Us
+                    </li>
+                    <li>
+                        Hospital Lab Management
+                    </li>
+                    <li>
+                        Organise Camps
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-lg-3 col-sm-4 col-md-4">
+                <span>
+                    Packages :
+                </span>
+                <ul>
+                    <li>
+                        List of all Packages
+                    </li>
+                    <span>
+                        Careers
+                    </span>
+                    <li>
+                        Current Openings
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-md-3">
+                <span>
+                    Employee Portals
+                </span>
+                <div class="py-1 mb-4">
+                    <a href="javascript:void(0);" class="d-inline-block mb-2">Employee Portal 1</a>
+                    <a href="javascript:void(0);" class="d-inline-block mb-2">Employee Portal 1</a>
+                    <a href="javascript:void(0);" class="d-inline-block mb-2">Download forms</a>
+                </div>
+            </div>
+        </div>
+</section>-
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+
+</html>
